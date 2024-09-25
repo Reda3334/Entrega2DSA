@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <div class="jumbotron text-center">
+        <h1>Bienvenidos a mi sitio web !</h1>
+      </div>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Pon el nombre de usuario GitHub</h2>
+       
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" id="github-usuario" class="form-control" placeholder="Escribe aquí ">
+                </div>
+                <button id="submit-usuario" class="btn btn-primary mt-3">Buscar</button>
+            </div>
+        </div>
+
+        
+        <div id="message" class="text-center mt-3"></div>
+    </div>
+     
+     <div class="row justify-content-center">
+        <div class="col-md-10">
+            <table class="table table-bordered table-striped mt-3" id="repos-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Stars</th>
+                    </tr>
+                </thead>
+                <tbody id="repos-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+  
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
